@@ -1,0 +1,116 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+  padding-right: 215px;
+  background-color: #2f303a;
+  max-width: 1600px;
+  max-height: 252px;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 12px;
+  margin-right: 93px;
+}
+
+.footer__social h2,
+.footer__mail h2 {
+  text-align: start;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $main-title-color;
+  margin-bottom: 20px;
+}
+.social-footer {
+  display: flex;
+}
+
+.social-footer__item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-footer__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-footer__icon {
+  fill: $main-title-color;
+}
+
+.footer__mail {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+}
+.footer-subscribe {
+  display: flex;
+  align-items: center;
+}
+.footer__mail input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-subscribe__subscribe {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  background-color: $accent-color;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  align-items: center;
+
+  letter-spacing: 0.06em;
+
+  color: $main-title-color;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.footer-subscribe__button {
+  margin-left: 10px;
+}
+.footer-subscribe__input {
+  background-color: #2f303a;
+  padding-left: 16px;
+  outline: none;
+}

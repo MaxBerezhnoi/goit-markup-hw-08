@@ -1,4 +1,9 @@
 .page-header {
+  position: relative;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    height: 80px;
+  }
 }

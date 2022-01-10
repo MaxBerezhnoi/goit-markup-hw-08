@@ -1,22 +1,39 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
-  padding-right: 215px;
+
   background-color: #2f303a;
-  max-width: 1600px;
-  max-height: 252px;
+  @media screen and (min-width: 480px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 215px;
+    padding-right: 215px;
+    max-width: 1600px;
+    max-height: 252px;
+  }
 }
 .footer__social {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 12px;
-  margin-right: 93px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      margin: 0 auto 20px auto;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    margin-top: 12px;
+    margin-right: 93px;
+  }
 }
 
 .footer__social h2,
@@ -35,6 +52,9 @@
 }
 .social-footer {
   display: flex;
+  @media screen and (min-width: 480px) {
+    margin: 0 auto 60px auto;
+  }
 }
 
 .social-footer__item {
@@ -71,10 +91,23 @@
   display: flex;
   flex-direction: column;
   margin-right: 0;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      margin: 0 auto 20px auto;
+    }
+  }
 }
 .footer-subscribe {
   display: flex;
   align-items: center;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .footer__mail input {
   width: 358px;
@@ -84,6 +117,9 @@
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
 }
 
 .footer-subscribe__subscribe {
@@ -113,4 +149,7 @@
   background-color: #2f303a;
   padding-left: 16px;
   outline: none;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
 }

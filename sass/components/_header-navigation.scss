@@ -1,5 +1,40 @@
 .page-header__navigation {
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.menu-contaner {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.page-header__menu480 {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  .icon-close {
+    display: none;
+  }
+  &.is-open {
+    .icon-close {
+      display: block;
+    }
+    .icon-menu {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .site-nav__active {
@@ -24,6 +59,9 @@
 .site-nav {
   margin-left: 93px;
   margin-right: 305px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .site-nav__item:not(:last-child) {

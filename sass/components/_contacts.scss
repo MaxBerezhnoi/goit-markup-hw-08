@@ -1,5 +1,5 @@
 .contacts__icon {
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   fill: currentColor;
   align-items: center;
 
@@ -9,6 +9,10 @@
   &:focus {
     fill: $accent-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
 
 .section--top-padding {
@@ -16,14 +20,22 @@
 }
 
 .contacts__tel {
-  margin-left: 30px;
+  /*margin-left: 30px;*/
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 
 .contacts {
-  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .contacts.contacts__link + .contacts__link {
-  margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 .contacts__link {
   font-style: normal;

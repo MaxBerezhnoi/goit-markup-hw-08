@@ -1,9 +1,26 @@
 .footer__contacts {
-  margin-top: 0;
-  margin-right: 70px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    .footer__logo {
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-right: 70px;
+  }
 }
 .contacts-footer {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto 60px auto;
+  }
 }
 .contacts-footer__link {
   font-style: normal;
@@ -19,6 +36,14 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    display: flex;
+    justify-content: center;
   }
 }
 .contacts-footer__adress {

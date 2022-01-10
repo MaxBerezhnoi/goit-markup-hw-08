@@ -28,6 +28,30 @@
             ><svg width="145" height="31">
               <use href="./images/icons.svg#icon-logo-black"></use></svg
           ></a>
+
+          <button
+            class="page-header__menu480 is-open"
+            type="button"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#icon-menu40px"
+              ></use>
+              <use
+                class="icon-close"
+                href="./images/icons.svg#icon-close40px"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-contaner">
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a
@@ -66,6 +90,7 @@
             >
           </li>
         </ul>
+      </div>
       </div>
     </header>
 
@@ -409,7 +434,7 @@
       <div class="footer">
         <div class="footer__contacts">
           <!--<a class="logo" href="./index.html">Web<span class="studio-white">Studio</span></a>-->
-          <a href=""
+          <a class="footer__logo" href=""
             ><svg width="145" height="31">
               <use href="./images/icons.svg#icon-logo-white"></use></svg
           ></a>
@@ -582,5 +607,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,9 +1,9 @@
-.page-header__navigation {
+/*.page-header__navigation {
   align-items: center;
   @media screen and (min-width: 1200px) {
     display: flex;
   }
-}
+}*/
 
 .menu-contaner {
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -12,6 +12,17 @@
     top: 100%;
     left: 0;
     width: 100%;
+    padding: 10px 15px 48px 40px;
+    text-align: center;
+
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -37,6 +48,11 @@
   }
 }
 
+.social-links {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 .site-nav__active {
   position: relative;
 

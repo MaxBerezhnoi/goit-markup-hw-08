@@ -35,6 +35,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: $second-title-color;
 }
+body.menu-open {
+  overflow: hidden;
+}
 
 .list {
   list-style: none;

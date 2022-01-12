@@ -55,12 +55,15 @@
 .differences__icon-area {
   height: 120px;
   background-color: $secondary-button-color;
-
-  /*padding-top: 25px;
-  padding-bottom: 25px;*/
-}
-.differences__icon {
-  @media screen and (min-width: 480px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*@media screen and (max-width: 479px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   @media screen and (min-width: 480px) {
     margin: 25px 190px;
   }
   @media screen and (min-width: 768px) {
@@ -69,8 +72,7 @@
 
   @media screen and (min-width: 1200px) {
     margin: 25px 100px;
-  }
+  }*/
 }
-/*.differences__item:not(:last-child) {
-  margin-right: 30px;
-}*/
+/*padding-top: 25px;
+  padding-bottom: 25px;*/

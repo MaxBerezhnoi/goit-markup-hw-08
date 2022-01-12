@@ -9,8 +9,10 @@
   &:focus {
     fill: $accent-color;
   }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
     margin-right: 10px;
   }
 }
@@ -21,12 +23,51 @@
 
 .contacts__tel {
   /*margin-left: 30px;*/
+  @media screen and (max-width: 767px) {
+    margin-bottom: 35px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 30px;
   }
 }
+.contacts_mail {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+}
 
 .contacts {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    margin-top: 302px;
+    flex-direction: column-reverse;
+
+    .contacts__tel {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.176;
+
+      letter-spacing: 0.02em;
+
+      color: #2196f3;
+      margin-bottom: 32px;
+    }
+    .contacts__mail {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+
+      color: #757575;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199) {
+    display: block;
+    margin-right: 0;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
@@ -50,5 +91,8 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1199) {
+    display: flex;
   }
 }

@@ -1,10 +1,16 @@
 .footer {
+  position: relative;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
-
   background-color: #2f303a;
-  @media screen and (min-width: 480px) {
+
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media screen and (max-width: 767px) {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -21,13 +27,18 @@
   }
 }
 .footer__social {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     h2 {
       margin: 0 auto 20px auto;
     }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    top: 65px;
+    right: 89px;
   }
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
@@ -52,7 +63,7 @@
 }
 .social-footer {
   display: flex;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin: 0 auto 60px auto;
   }
 }
@@ -91,7 +102,8 @@
   display: flex;
   flex-direction: column;
   margin-right: 0;
-  @media screen and (min-width: 480px) {
+
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,11 +111,17 @@
       margin: 0 auto 20px auto;
     }
   }
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 247px;
+  }
 }
 .footer-subscribe {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,8 +135,12 @@
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  @media screen and (min-width: 480px) {
+
+  @media screen and (max-width: 767px) {
     width: 100%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
   }
 }
 
@@ -149,7 +171,7 @@
   background-color: #2f303a;
   padding-left: 16px;
   outline: none;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
 }

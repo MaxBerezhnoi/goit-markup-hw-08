@@ -64,6 +64,10 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 .js-close-menu {
   position: absolute;
@@ -88,8 +92,10 @@
   line-height: 1.22;
 
   letter-spacing: 0.02em;
+  .color {
+    color: #2196f3;
+  }
 
-  color: #2196f3;
   li {
     padding: 0 10px;
   }
@@ -105,11 +111,15 @@
 
 .site-nav__active {
   position: relative;
-
+  @media screen and (max-width: 767px) {
+    .active {
+      color: $accent-color;
+    }
+  }
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -33px;
 
     display: block;
     width: 100%;

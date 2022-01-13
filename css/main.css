@@ -121,6 +121,13 @@ h4 {
 @media screen and (max-width: 767px) {
   .page-header {
     padding: 10px 15px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    height: 80px;
   }
 }
 
@@ -194,6 +201,10 @@ h4 {
   }
 }
 
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: #2196f3;
+}
+
 .js-close-menu {
   position: absolute;
   right: 15px;
@@ -216,6 +227,9 @@ h4 {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+}
+
+.social-links .color {
   color: #2196f3;
 }
 
@@ -237,10 +251,16 @@ h4 {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav__active .active {
+    color: #2196f3;
+  }
+}
+
 .site-nav__active::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -33px;
   display: block;
   width: 100%;
   height: 4px;
@@ -1371,7 +1391,7 @@ h4 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .modal {
     max-width: 450px;
     position: absolute;
@@ -1381,11 +1401,21 @@ h4 {
   }
 }
 
+@media screen and (min-width: 780px) and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
     position: absolute;
-    top: 70%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }

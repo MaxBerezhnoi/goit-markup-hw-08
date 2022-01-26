@@ -560,12 +560,14 @@ h4 {
   .differences {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .differences {
     display: flex;
+    justify-content: center;
   }
 }
 
